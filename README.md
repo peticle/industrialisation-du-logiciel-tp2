@@ -23,3 +23,14 @@ Chaque étape possède au minimum 2 paramètres qui sont :
 
 Cette étape sert à configurer python sur le runner en utilisant l'action
 `actions/setup-python@v3`, le paramètre `with` permet de spécifier quelle version de Python on veut installer.
+
+### Tester l'image Docker qui a été push
+
+Pour pull, il a d'abord fallu que je me connecte avec le personal token de la même façon que le fait le runner.
+
+```bash
+echo '<personal_token>' | docker login ghcr.io -u peticle --password-stdin
+```
+
+## Exercice 2 - Qualité de code
+
